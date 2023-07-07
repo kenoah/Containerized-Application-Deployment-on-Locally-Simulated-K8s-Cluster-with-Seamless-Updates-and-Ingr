@@ -5,10 +5,10 @@ metadata:
   namespace: sqldb
 spec:
   containers:
-    - name: mysql-img   # Updated container name
-      image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/mysql-img
+    - name: mysql-img   
+      image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/mysql-img:mysql_version_1
       env:
-        - name: mysql_secret_key
+        - name: MYSQL_ROOT_PASSWORD
           value: "12345"
       ports:
         - containerPort: 3306

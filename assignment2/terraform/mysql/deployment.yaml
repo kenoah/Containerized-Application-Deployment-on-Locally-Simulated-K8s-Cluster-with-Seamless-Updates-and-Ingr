@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
         - name: mysql-img
-          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/mysql-img
+          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/mysql-img:mysql_version_1
           env:
-            - name: mysql_secret_key
-              value: "12345"
+            - name: MYSQL_ROOT_PASSWORD
+          value: "12345"
           ports:
             - containerPort: 3306
