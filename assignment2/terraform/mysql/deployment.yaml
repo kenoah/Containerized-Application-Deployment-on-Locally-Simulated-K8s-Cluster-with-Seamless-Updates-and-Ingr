@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql-deployment
+  namespace: sqldb
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+        - name: mysql-img
+          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/mysql-img
+          env:
+            - name: mysql_secret_key
+              value: "12345"
+          ports:
+            - containerPort: 3306
