@@ -18,6 +18,6 @@ spec:
           image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/mysql-img:mysql_version_1
           env:
             - name: MYSQL_ROOT_PASSWORD
-          value: "12345"
+              value: "12345"
           ports:
             - containerPort: 3306
