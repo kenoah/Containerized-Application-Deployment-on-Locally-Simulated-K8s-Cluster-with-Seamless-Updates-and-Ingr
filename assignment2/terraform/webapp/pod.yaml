@@ -10,11 +10,11 @@ spec:
       image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/websrv-img:webserver_version_1
       env:
         - name: DBPWD
-          value: pw
+          value: "12345"
         - name: DBUSER
           value: root
         - name: DBHOST
-          value: pod ip
+          value: "mysql-service.sqldb"
         - name: DBPORT
           value: "3306"
       ports:
