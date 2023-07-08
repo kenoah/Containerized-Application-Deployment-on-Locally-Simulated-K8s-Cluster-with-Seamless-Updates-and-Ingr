@@ -14,7 +14,7 @@ spec:
         - name: DBUSER
           value: root
         - name: DBHOST
-          value: "mysql-service.sqldb.svc.cluster.local"
+          value: pod ip
         - name: DBPORT
           value: "3306"
       ports:
