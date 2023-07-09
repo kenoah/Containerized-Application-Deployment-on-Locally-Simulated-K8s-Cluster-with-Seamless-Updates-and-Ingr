@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: mysql-img
-          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/mysql-img:mysql_version_1
+          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/kennith-mysql-ecr-repo:mysql-v0.1
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: "12345"
