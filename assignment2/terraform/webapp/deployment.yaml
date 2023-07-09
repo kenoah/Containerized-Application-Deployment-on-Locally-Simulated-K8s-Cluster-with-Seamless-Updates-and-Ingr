@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: websrv-img
-          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/kennith-webapp-ecr-repo:application-v0.1
+          image: 132456686334.dkr.ecr.us-east-1.amazonaws.com/websrv-img:webserver_version_1
           env:
             - name: DBPWD
               value: "12345"
