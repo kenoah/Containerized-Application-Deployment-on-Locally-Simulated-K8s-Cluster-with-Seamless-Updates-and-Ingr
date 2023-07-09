@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp-deployment
-  namespace: webapp
+  namespace: employees
   labels:
     app: webapp
-    version: v1
+    version: v2
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: employees
-      version: v1
+      version: v2
   template:
     metadata:
       labels:
         app: employees
-        version: v1
+        version: v2
     spec:
       containers:
         - name: websrv-img
