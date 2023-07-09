@@ -10,12 +10,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: employees
+      app: webapp
       version: v1
   template:
     metadata:
-      labels:
-        app: employees
+        app: webapp
         version: v1
     spec:
       containers:

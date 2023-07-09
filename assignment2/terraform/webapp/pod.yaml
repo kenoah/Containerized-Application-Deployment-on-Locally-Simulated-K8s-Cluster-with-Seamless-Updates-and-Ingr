@@ -4,6 +4,7 @@ metadata:
   name: webapp-pod
   labels:
     app: webapp
+    version: v1
 spec:
   containers:
     - name: websrv-img
@@ -14,7 +15,7 @@ spec:
         - name: DBUSER
           value: root
         - name: DBHOST
-          value: "mysql-service.sqldb"
+          value: "mysql-service.sqldb.svc.cluster.local"
         - name: DBPORT
           value: "3306"
       ports:
